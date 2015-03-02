@@ -18,3 +18,7 @@ source ~/dotfiles/antigen.zsh
 #
 # # Tell antigen that you're done.
  antigen apply
+
+export JAVA_HOME=`/usr/libexec/java_home`
+
+source ~/dotfiles/z.sh
