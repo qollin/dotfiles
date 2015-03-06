@@ -20,5 +20,6 @@ source ~/dotfiles/antigen.zsh
  antigen apply
 
 export JAVA_HOME=`/usr/libexec/java_home`
+export PATH=$PATH:~/bin
 
 source ~/dotfiles/z.sh
