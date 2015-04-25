@@ -19,7 +19,12 @@ source ~/dotfiles/antigen.zsh
 # # Tell antigen that you're done.
  antigen apply
 
-export JAVA_HOME=`/usr/libexec/java_home`
+[[ -x /usr/libexec/java_home ]] && export JAVA_HOME=`/usr/libexec/java_home`
 export PATH=$PATH:~/bin
+
+export LC_CTYPE=en_US.UTF-8 
+export LC_ALL=en_US.UTF-8
+
+export GOPATH=$HOME/go
 
 source ~/dotfiles/z.sh
